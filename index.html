@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site Fofo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bem-vindo ao Meu Site Fofinho!</h1>
+    <form id="loginForm" action="javascript:void(0);">
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+      
+      <label for="link">Escolha um link para ser redirecionado:</label>
+      <select id="link" name="link">
+        <option value="https://photos.app.goo.gl/yruhrgWNpGvZVCy89">Exemplo 1</option>
+        <option value="https://www.exemplo2.com">Exemplo 2</option>
+        <option value="https://www.exemplo3.com">Exemplo 3</option>
+      </select>
+
+      <button type="submit" class="submit-btn">Entrar</button>
+    </form>
+    <p id="erro-msg" style="color: red; display: none;">Senha incorreta. Tente novamente!</p>
+  </div>
+
+  <script>
+    // Senha correta
+    const senhaCorreta = "femboi"; // Altere para a senha que deseja usar
+
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Impede o envio do formulário
+
+      const senha = document.getElementById("senha").value;
+      const linkEscolhido = document.getElementById("link").value;
+
+      if (senha === senhaCorreta) {
+        alert("Senha correta! Redirecionando...");
+        window.location.href = linkEcolhido; // Redireciona para o link escolhido
+      } else {
+        document.getElementById("erro-msg").style.display = "block"; // Exibe a mensagem de erro
+      }
+    });
+  </script>
+</body>
+</html>
