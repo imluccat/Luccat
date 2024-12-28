@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Secret Page</title>
+  <link rel="stylesheet" href="styles.css">  <!-- Link para o CSS -->
+</head>
+<body>
+  <div class="container">
+    <h1>Enter the Password</h1>  <!-- Título da página -->
+    <form id="loginForm" action="javascript:void(0);">
+      <label for="senha">Password:</label>
+      <input type="password" id="senha" name="senha" placeholder="Enter the password" required>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+    <p id="erro-msg" style="color: red; display: none;">Incorrect password. Try again!</p> <!-- Mensagem de erro -->
+  </div>
+
+  <script>
+    // Senha correta
+    const correctPassword = "hellokitty"; // A senha que você deseja
+
+    // URL oculta para onde o usuário será redirecionado
+    const hiddenLink = "https://photos.app.goo.gl/yruhrgWNpGvZVCy89";  // Substitua com o seu link oculto
+
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Impede o envio do formulário
+
+      const password = document.getElementById("senha").value;  // Obtém o valor da senha inserida
+
+      if (password === correctPassword) {
+        window.location.href = hiddenLink; // Redireciona para o link oculto
+      } else {
+        document.getElementById("erro-msg").style.display = "block"; // Exibe a mensagem de erro
+      }
+    });
+  </script>
+</body>
+</html>
