@@ -1,6 +1,6 @@
 /* Basic styles */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Courier', sans-serif;
   background-color: #f8c7d7; /* Light pink background */
   display: flex;
   justify-content: center;
@@ -8,7 +8,7 @@ body {
   height: 100vh;
   margin: 0;
   background-image: url('https://i.pinimg.com/736x/c6/28/43/c6284332f88adc94b3b51b36389d24ca.jpg'); /* Substitua com o link da sua imagem */
-  background-size: 1280px 720px;
+  background-size: 1920px 1080px;
   background-position: center;
 }
 
@@ -20,8 +20,8 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 300px;
-  backdrop-filter: blur(10px); /* Aplica o efeito de desfoque no fundo */
-  -webkit-backdrop-filter: blur(10px); /* Compatibilidade com o Safari */
+  backdrop-filter: blur(8px); /* Aplica o efeito de desfoque no fundo */
+  -webkit-backdrop-filter: blur(8px); /* Compatibilidade com o Safari */
   border: 2px solid rgba(255, 255, 255, 0.2); /* Linha sutil de borda */
 }
 
