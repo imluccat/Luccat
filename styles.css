@@ -15,12 +15,15 @@ body {
 
 /* Container styles */
 .container {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6); /* Cor branca com 60% de opacidade */
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 300px;
+  backdrop-filter: blur(10px); /* Aplica o efeito de desfoque no fundo */
+  -webkit-backdrop-filter: blur(10px); /* Compatibilidade com o Safari */
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Linha sutil de borda */
 }
 
 /* Title */
