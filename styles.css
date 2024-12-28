@@ -27,7 +27,7 @@ body {
 
 /* Title */
 h1 {
-  color: #F7D0E3; /* Bright pink color */
+  color: #EFB5D1; /* Bright pink color */
   font-size: 2em;
   margin-bottom: 20px;
 }
@@ -50,7 +50,7 @@ input[type="password"] {
 }
 
 input[type="password"]:focus {
-  border-color: #F7D0E3; /* Darker pink when focused */
+  border-color: #EFB5D1; /* Darker pink when focused */
 }
 
 /* Button styles */
@@ -70,7 +70,7 @@ input[type="password"]:focus {
 }
 
 .submit-btn:active {
-  background-color: #F7D0E3; /* Lighter pink when clicked */
+  background-color: #EFB5D1; /* Lighter pink when clicked */
 }
 
 /* Page loading animation effect */
